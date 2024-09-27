@@ -26,7 +26,8 @@ function App() {
       }),
     }
     try {
-      const response = await fetch("http://localhost:8000/completions", options)
+      // const response = await fetch("http://localhost:8000/completions", options)
+      const response = await fetch("/api/completions", options)
       const data: ChatData = await response.json()
       const userMessage = {
         role: "user",
