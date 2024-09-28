@@ -8,7 +8,7 @@ interface CodeDisplayProps {
 export default function CodeDisplay({ text }: CodeDisplayProps) {
   const [copied, setCopied] = useState(false)
   return (
-    <div className="code-display w-[96%] m-[2%] h-[46%] rounded-xl bg-slate-900 overflow-y-scroll ">
+    <div className="code-display w-[96%] m-[2%] h-[46%] rounded-xl bg-slate-900 overflow-y-auto ">
       <div className="buttons w-full h-[35px] flex items-center pl-2 border border-slate-600 sticky top-0 bg-slate-900 justify-between ">
         <div className="flex">
           {" "}
